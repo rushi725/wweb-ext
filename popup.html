@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" style="min-width:300px;">
+
+<head>
+  <title>Create New Group</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="popup.css">
+</head>
+
+<body>
+  <div class="container">
+    <h2 id="titleId">Create New Group</h2>
+    <p id="errorId"></p>
+    <div class="form-group">
+      <label for="groupName">Group Name</label>
+      <input type="text" class="form-control" id="groupName" placeholder="My Group" required>
+    </div>
+    <br />
+    <div class="form-group">
+      <label for="numberList">Contact Numbers</label>
+      <textarea class="form-control" id="numberList" rows="4"
+        placeholder="Please enter contact numbers comma separated or line separated... &#10e.g&#10 1234567890 &#10 9988998899 &#10or &#10 1234567890,9988998899"
+        required></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary" id="submitForm">Create Group</button>
+
+    <button type="submit" class="btn btn-primary" id="groupNumbers">Get Group Numbers</button>
+
+    <h3>Instructions :-</h3>
+    <ul>
+      <li>Please make sure there are no duplicate numbers in the list</li>
+
+    </ul>
+  </div>
+  <script src="popup.js"></script>
+</body>
+
+</html>
